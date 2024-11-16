@@ -35,15 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlides(slideIndex);
 });
 
-// close notification
-document.addEventListener("DOMContentLoaded", () => {
-  const closeBtn = document.querySelector("#closeNotification");
-  closeBtn.addEventListener("click", () => {
-    const notification = document.querySelector("#notification");
-    notification.style.display = "none";
-  });
-});
-
 // on order click
 document.addEventListener("DOMContentLoaded", () => {
   const orderLink = document.querySelector("#order");

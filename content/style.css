@@ -102,6 +102,16 @@ html {
   cursor: pointer;
 }
 
+.order-button {
+  border: none;
+  background-color: #ffc503;
+  color: #051e60;
+  font-family: "Livvic", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* Sections */
 
 .section {
@@ -282,6 +292,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .carousel-text h1 {

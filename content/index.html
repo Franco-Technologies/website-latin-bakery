@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latin Bakery</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,9 +25,9 @@
           <h1>LATIN BAKERY</h1>
         </div>
         <div id="floatingMenu" class="floating-menu">
-          <a href="#about">About Us</a>
-          <a href="#menu">menu</a>
-          <a href="#location">Location</a>
+          <a id="about-link" href="#about">About Us</a>
+          <a id="menu-link" href="#menu">menu</a>
+          <a id="location-link" href="#location">Location</a>
           <a id="order">Order Now</a>
         </div>
       </div>
@@ -84,66 +85,20 @@
       </p>
 
       <!-- location link inline-->
-      <p>
+      <!-- <p> -->
         <a
+          id="visit-link"
           href="https://www.google.com/maps/place/112+Blossom+Centre+Blvd,+Willard,+OH+44890"
           target="_blank"
           >Visit us at 113 Blossom Centre Blvd, Willard, OH
           <img
+            class="maps-icon"
             src="https://img.icons8.com/ios/50/000000/google-maps-new.png"
             alt="Google Maps"
           />
         </a>
-      </p>
+      <!-- </p> -->
     </section>
-
-    <!-- PAN
-Sobao
-https://florida-bakery.com/templates/yootheme/cache/23/Baked-Sobao-Bread-23083293.webp
-Francés 
-https://i.pinimg.com/736x/95/a8/04/95a804ae9afe78fc825deecdf5807052.jpg
-Dulce
-https://mediavine-res.cloudinary.com/image/upload/s--t93YczkQ--/ar_16:9,c_fill,f_auto,fl_lossy,q_auto/v1556732222/sfhmlewsdvyht79nay7m.jpg
-Canilla 
-https://enharinado.com/wp-content/uploads/2020/08/Canilla6.jpg
-Pan de jamón
-https://blog.amigofoods.com/wp-content/uploads/2021/04/pan-de-jamon-recipe-720x540.jpg
-[11/12/24, 10:11:00 PM] Papi: DESSERTS
-Tres leches
-brazo gitano
-Quesito
-Ojaldres
-Entre otros
-[11/12/24, 10:13:00 PM] Papi: Luego los bocadillos o desayunos
-Arena Venezolana
-https://foodinstitute.com/wp-content/uploads/2024/06/Arepa.jpg
-Empanada venezolana 
-https://bonkerz4food.com/wp-content/uploads/2020/08/empanadas-web-1.jpg
-Empanada Dominicana
-https://i.ytimg.com/vi/zZVkiJ2SqyY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBAKbKtyf2gSO512sT7sI4NAjQ-IA
-Quipe
-https://www.recetasnestle.com.do/sites/default/files/srh_recipes/55af21d3ea3c1667321cf8ef7b8dc2f6.jpg
-Tequeño
-https://www.mashed.com/img/gallery/the-venezuelan-cheese-stick-you-wont-want-to-put-down/intro-1670261866.jpg
-Sándwich cubano
-https://www.foodandwine.com/thmb/y7h5jpAeipGSkVuiGXHO7uzXtIc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Cubano-Sandwiches-FT-RECIPE0823-74063c226c254526ad1130edbe976a91.jpg
-[11/12/24, 10:14:40 PM] Papi: Luego las bebidas 
-Jugo de naranja
-https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/orange-juice-1296x728-feature.jpg?w=1155&h=1528
-Jugo de chinola
-https://www.attainable-sustainable.net/wp-content/uploads/2020/07/passion-fruit-juice.jpg
-Jugo de tamarindo
-https://media.istockphoto.com/id/1461237880/photo/water-from-tamarindo-mexico.jpg?s=612x612&w=0&k=20&c=R5W2W2CLmBqmCEE-_FlxPKJg32xs1bIfgh3Aqt_rjXs=
-Morirsoñando
-https://www.cookstyle.co.uk/wp-content/uploads/2017/11/Morir-Sonando-drink-two-glasses-decorated-with-pieces-of-oranges-a-cut-orange-and-a-flower.jpg
-Avena con limón
-https://kalejunkie.com/wp-content/uploads/2023/05/KJ-Brazilian-Limonada-5.jpg
-Etc
-[11/12/24, 10:15:18 PM] Papi: Y los café 
-Americano
-Espresso
-Capuchino
-Latte -->
 
     <section id="menu" class="section menu">
       <h2>Menu</h2>
@@ -357,12 +312,16 @@ Latte -->
           <div class="location-card">
             <h3>Visit Us</h3>
             <a
-              href="https://www.google.com/maps/place/112+Blossom+Centre+Blvd,+Willard,+OH+44890"
-              target="_blank"
-              >113 Blossom Centre Blvd, Willard, OH 44890 <img
+            id="visit-link"
+            href="https://www.google.com/maps/place/112+Blossom+Centre+Blvd,+Willard,+OH+44890"
+            target="_blank"
+            >Visit us at 113 Blossom Centre Blvd, Willard, OH
+            <img
+                class="maps-icon"
                 src="https://img.icons8.com/ios/50/000000/google-maps-new.png"
-                alt="Google Maps" /></a
-            >
+                alt="Google Maps"
+            />
+            </a>
             <p>Open Monday - Saturday</p>
             <p>8:00 AM - 6:00 PM</p>
           </div>

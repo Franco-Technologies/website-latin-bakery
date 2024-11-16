@@ -2,6 +2,10 @@
 
 /* Responsive adjustments */
 @media (max-width: 1020px) {
+  .logo-container {
+    margin: 0 10px; /* Add margin to the logo container */
+    padding: 0; /* Add padding to the logo container */
+  }
   .logo-container img {
     height: 60px; /* Smaller logo on mobile */
   }

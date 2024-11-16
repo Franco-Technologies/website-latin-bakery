@@ -43,3 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
     notification.style.display = "none";
   });
 });
+
+// on order click
+document.addEventListener("DOMContentLoaded", () => {
+  const orderLink = document.querySelector("#order");
+  orderLink.addEventListener("click", () => {
+    alert(
+      "Online ordering is not available at the moment. Please visit our store to place an order."
+    );
+  });
+});

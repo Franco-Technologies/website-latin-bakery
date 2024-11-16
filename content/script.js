@@ -1,3 +1,4 @@
+//Script for the carousel
 let slideIndex = 0;
 
 function showSlides() {

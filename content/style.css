@@ -39,10 +39,15 @@ html {
 }
 
 /* Menu */
+/* Header */
 #header {
   background-color: #021e60;
   color: #ffffff;
-  transition: padding 0.3s ease-in-out; /* Smooth transition for padding */
+  transition: padding 0.3s ease-in-out;
+  position: fixed; /* Added position fixed */
+  top: 0; /* Positioned at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Stays on top */
 }
 
 .header-container {

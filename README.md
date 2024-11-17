@@ -25,7 +25,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://franco-technologies.github.io/website-latin-bakery)
 
 This is a landing page for a latin bakery. The website is built using HTML, CSS, and JavaScript. The website is responsive and can be viewed on any device.
 

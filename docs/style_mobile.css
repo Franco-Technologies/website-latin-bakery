@@ -10,6 +10,10 @@
     height: 60px; /* Smaller logo on mobile */
   }
 
+  .opening-soon {
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+
   #about-link,
   #menu-link,
   #portfolio-link,
@@ -19,8 +23,17 @@
 }
 
 @media (max-width: 800px) {
-  #header {
+  .logo-container {
     padding: 10px 0;
+  }
+
+  #header {
+    height: 180px; /*Adjust based on your header's height */
+  }
+
+  #header p {
+    font-size: 14px; /* Reduce font size for mobile */
+    max-width: 350px;
   }
 
   .header-container {

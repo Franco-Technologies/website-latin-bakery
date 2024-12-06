@@ -34,13 +34,3 @@ function moveSlide(n) {
 document.addEventListener("DOMContentLoaded", () => {
   showSlides(slideIndex);
 });
-
-// on order click
-document.addEventListener("DOMContentLoaded", () => {
-  const orderLink = document.querySelector("#order");
-  orderLink.addEventListener("click", () => {
-    alert(
-      "Online ordering is not available at the moment. Please visit our store to place an order."
-    );
-  });
-});

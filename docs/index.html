@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latin Bakery</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_mobile.css" />
+    <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,94 +19,145 @@
     <!--  OpenGraph -->
     <!-- HTML Meta Tags -->
     <title>Latin Bakery</title>
-    <meta name="description" content="Delicious treats for every occasion">
+    <meta name="description" content="Delicious treats for every occasion" />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://franco-technologies.github.io/website-latin-bakery/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Latin Bakery">
-    <meta property="og:description" content="Delicious treats for every occasion">
-    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/9a24647d-c0dc-4e81-a673-e57029d0251b.png?token=2v39dwhzDtEJVa0su4xVpYqGYiFlF4WBYch3BKzhnuA&height=676&width=1200&expires=33267788529">
+    <meta property="og:url" content="https://latinbakery.site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Latin Bakery" />
+    <meta
+      property="og:description"
+      content="Delicious treats for every occasion"
+    />
+    <meta
+      property="og:image"
+      content="https://opengraph.b-cdn.net/production/images/9a24647d-c0dc-4e81-a673-e57029d0251b.png?token=2v39dwhzDtEJVa0su4xVpYqGYiFlF4WBYch3BKzhnuA&height=676&width=1200&expires=33267788529"
+    />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="franco-technologies.github.io">
-    <meta property="twitter:url" content="https://franco-technologies.github.io/website-latin-bakery/">
-    <meta name="twitter:title" content="Latin Bakery">
-    <meta name="twitter:description" content="Delicious treats for every occasion">
-    <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/9a24647d-c0dc-4e81-a673-e57029d0251b.png?token=2v39dwhzDtEJVa0su4xVpYqGYiFlF4WBYch3BKzhnuA&height=676&width=1200&expires=33267788529">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="latinbakery.site" />
+    <meta property="twitter:url" content="https://latinbakery.site" />
+    <meta name="twitter:title" content="Latin Bakery" />
+    <meta
+      name="twitter:description"
+      content="Delicious treats for every occasion"
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/images/9a24647d-c0dc-4e81-a673-e57029d0251b.png?token=2v39dwhzDtEJVa0su4xVpYqGYiFlF4WBYch3BKzhnuA&height=676&width=1200&expires=33267788529"
+    />
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
   </head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YV16C1YHXB"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-YV16C1YHXB"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-YV16C1YHXB');
+    gtag("config", "G-YV16C1YHXB");
   </script>
-  <body class="bg-white">
-    <div id="header">
+  <body class="bg-gray-100 tracking-widest">
+    <header>
       <!-- Opening soon banner -->
-      <div class="opening-soon">
-        <p>Stay tuned for our grand opening! Date to be announced soon.</p>
+      <div class="bg-darkyellow text-center py-2">
+        <p class="max-w-[80%] mx-auto">
+          Stay tuned for our grand opening! <br class="block md:hidden" />
+          Date to be announced soon.
+        </p>
       </div>
       <!--  header -->
-      <div class="header-container">
-        <div class="logo-container">
-          <!-- white bread icon -->
-          <img src="bread-24.png" alt="Bread" />
-          <h1>LATIN BAKERY</h1>
-        </div>
-        <div id="floatingMenu" class="floating-menu">
-          <a id="about-link" href="#about">About Us</a>
-          <a id="menu-link" href="#menu">menu</a>
-          <a id="location-link" href="#location">Location</a>
-          <a id="order" href="https://latin-bakery.square.site/" target="_blank">Order Now!</a>
+      <div class="bg-darkblue py-4 text-white px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto"
+        >
+          <div
+            class="flex justify-center max-w-[90%] text-4xl font-bold gap-1 py-2"
+          >
+            <img src="bread-24.png" alt="Bread" class="w-6 h-6" />
+            <h1>LATIN BAKERY</h1>
+          </div>
+          <div
+            id="floatingMenu"
+            class="py-4 text-center flex gap-4 items-center font-bold text-md"
+          >
+            <a id="about-link" class="hidden md:block mx-2" href="#about"
+              >ABOUT US</a
+            >
+            <a id="menu-link" class="hidden md:block mx-2" href="#breads"
+              >MENU</a
+            >
+            <a id="location-link" class="hidden md:block mx-2" href="#location"
+              >LOCATION</a
+            >
+            <a
+              id="order"
+              href="https://latin-bakery.square.site/"
+              target="_blank"
+              class="bg-darkyellow px-4 py-2 rounded-full border-2 border-darkyellow text-darkblue"
+              >ORDER NOW!</a
+            >
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <section id="portfolio" class="section portfolio">
-      <div id="portfolioCarousel" class="carousel">
-        <div class="carousel-text-container">
-          <div class="carousel-text">
-            <h1>LATIN BAKERY</h1>
-            <p>Delicious treats for every occasion</p>
+    <section id="portfolio">
+      <div class="relative h-[500px] md:h-[700px] w-full">
+        <div class="carousel-images relative w-full h-full">
+          <div
+            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10"
+          >
+            <div class="text-center text-white px-4">
+              <h1 class="text-5xl md:text-7xl font-bold">LATIN BAKERY</h1>
+              <div class="flex items-center justify-center">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <p class="text-2xl md:text-4xl mx-12">
+                  Delicious treats for every occasion
+                </p>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="carousel-images">
-          <div class="carousel-item">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item absolute inset-0">
             <img
-              src="https://www.napoleonsbakery.com/wp-content/uploads/2023/07/Napoleons-Bakery-Donuts-Pastries-scaled.jpg"
-              alt="Project 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.mashed.com/img/gallery/the-best-bakery-in-every-state/intro-1601499029.jpg"
+              src="./assets/banner/pastries1.jpg"
               alt="Project 2"
+              class="w-full h-full object-cover"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item absolute inset-0">
             <img
-              src="https://cdn.vox-cdn.com/thumbor/8Mjgms-RmziRdp4frZuSvT6CnJs=/0x0:2000x1333/1200x675/filters:focal(840x507:1160x827)/cdn.vox-cdn.com/uploads/chorus_image/image/72677589/2023_09_09_Friends_and_Family_002.0.jpg"
+              src="./assets/banner/pastries2.jpg"
               alt="Project 3"
+              class="w-full h-full object-cover"
             />
           </div>
-
-          <!-- Add more images as needed -->
+          <div class="carousel-item absolute inset-0">
+            <img
+              src="./assets/banner/pastries3.jpg"
+              alt="Project 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
         </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <h2>A LITTLE ABOUT US</h2>
-      <p>
+    <section id="about" class="text-center bg-gray-200 text-darkblue">
+      <div class="bg-darkyellow py-2 text-xl font-semibold">
+        <h2>A LITTLE ABOUT US</h2>
+      </div>
+      <p class="py-6 text-lg md:text-xl text-black px-2">
         <!-- new bakery in willard ohio with light foods, deserts, juices, etc -->
         Welcome to Latin Bakery!
         <br />
@@ -115,260 +165,1584 @@
       </p>
     </section>
 
-    <section id="menu" class="section menu">
-      <h2>Menu</h2>
-      <div class="menu-container">
-        <div class="menu-card">
-          <h3>Breads</h3>
-          <!-- list of breads with pics-->
-          <div class="bread-list">
-            <div class="bread-item">
-              <img
-                src="https://florida-bakery.com/templates/yootheme/cache/23/Baked-Sobao-Bread-23083293.webp"
-                alt="Sobao"
-              />
-              <p>Sobao</p>
-            </div>
-            <div class="bread-item">
-              <img
-                src="https://i.pinimg.com/736x/95/a8/04/95a804ae9afe78fc825deecdf5807052.jpg"
-                alt="French Bread"
-              />
-              <p>French Bread</p>
-            </div>
-            <div class="bread-item">
-              <img
-                src="https://mediavine-res.cloudinary.com/image/upload/s--t93YczkQ--/ar_16:9,c_fill,f_auto,fl_lossy,q_auto/v1556732222/sfhmlewsdvyht79nay7m.jpg"
-                alt="Dulce"
-              />
-              <p>Dulce</p>
-            </div>
-            <div class="bread-item">
-              <img
-                src="https://enharinado.com/wp-content/uploads/2020/08/Canilla6.jpg"
-                alt="Canilla"
-              />
-              <p>Canilla</p>
-            </div>
-            <div class="bread-item">
-              <img
-                src="https://blog.amigofoods.com/wp-content/uploads/2021/04/pan-de-jamon-recipe-720x540.jpg"
-                alt="Pan de Jamon"
-              />
-              <p>Pan de Jamon</p>
-            </div>
+    <section id="breads" class="py-12 bg-gray-100">
+      <h2 class="text-center text-3xl font-bold text-darkblue mb-6">Breads</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+      >
+        <!-- Pan Bolita -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_bolita.jpg"
+            alt="Pan Bolita"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Pan Bolita</h3>
+            <p class="text-gray-600 mb-4">
+              Pan Bolita features a crispy exterior complemented by a soft,
+              pillowy interior, encasing a flavorful filling that bursts with
+              taste in every bite.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=48"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
           </div>
         </div>
-        <div class="menu-card">
-          <h3>Desserts</h3>
-          <!-- list of desserts with pics-->
-          <div class="dessert-list">
-            <div class="dessert-item">
-              <img
-                src="https://www.allrecipes.com/thmb/UwNk5NAiF1Eh47YEE8L7LuKduNs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7399-tres-leches-milk-cake-ddmfs-beauty-4x3-BG-25699-342a9c33649b439884f0edab17fdacf2.jpg"
-                alt="Tres Leches"
-              />
-              <p>Tres Leches</p>
-            </div>
-            <div class="dessert-item">
-              <img
-                src="https://mccormick.widen.net/content/ssk2udttqr/original/brazo_gitano_spanish_cake_roll_2000x1125.jpg"
-                alt="Brazo Gitano"
-              />
-              <p>Brazo Gitano</p>
-            </div>
-            <div class="dessert-item">
-              <img
-                src="https://i.ytimg.com/vi/XA7eAnZtc4c/sddefault.jpg"
-                alt="Quesito"
-              />
-              <p>Quesito</p>
-            </div>
-            <div class="dessert-item">
-              <img
-                src="https://proingra.com/wp-content/uploads/2020/07/hojaldre-3.png"
-                alt="Hojaldre"
-              />
-              <p>Hojaldre</p>
-            </div>
-            <div class="dessert-item">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/72/Canasta_con_pan_dulce_de_la_%22Fonda_Garufa%22_en_la_Colonia_Condesa_en_la_Ciudad_de_M%C3%A9xico.jpg"
-                alt="Pastries"
-              />
-              <p>and more...</p>
-            </div>
+
+        <!-- Pan Campesino -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_campesino.jpg"
+            alt="Pan Campesino"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan Campesino
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Crispy bread with a golden crust envelops a soft, airy interior,
+              offering a delightful contrast in texture.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=38"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
           </div>
         </div>
-        <div class="menu-card">
-          <h3>Lights Foods</h3>
-          <!-- list of light foods with pics-->
-          <div class="light-food-list">
-            <div class="light-food-item">
-              <img
-                src="https://foodinstitute.com/wp-content/uploads/2024/06/Arepa.jpg"
-                alt="Arepa Venezolana"
-              />
-              <p>Arepa Venezolana</p>
-            </div>
-            <div class="light-food-item">
-              <img
-                src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/12/13/0/FNM_010110-Take-It-From-Here-037_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1382544573736.webp"
-                alt="Empanada Venezolana"
-              />
-              <p>Empanada Venezolana</p>
-            </div>
-            <div class="light-food-item">
-              <img
-                src="https://i.ytimg.com/vi/zZVkiJ2SqyY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBAKbKtyf2gSO512sT7sI4NAjQ-IA"
-                alt="Empanada Dominicana"
-              />
-              <p>Empanada Dominicana</p>
-            </div>
-            <div class="light-food-item">
-              <img
-                src="https://www.recetasnestle.com.do/sites/default/files/srh_recipes/55af21d3ea3c1667321cf8ef7b8dc2f6.jpg"
-                alt="Quipe"
-              />
-              <p>Quipe</p>
-            </div>
-            <div class="light-food-item">
-              <img
-                src="https://www.mashed.com/img/gallery/the-venezuelan-cheese-stick-you-wont-want-to-put-down/intro-1670261866.jpg"
-                alt="Tequeño"
-              />
-              <p>Tequeño</p>
-            </div>
-            <div class="light-food-item">
-              <img
-                src="https://www.foodandwine.com/thmb/y7h5jpAeipGSkVuiGXHO7uzXtIc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Cubano-Sandwiches-FT-RECIPE0823-74063c226c254526ad1130edbe976a91.jpg"
-                alt="Sándwich cubano"
-              />
-              <p>Sándwich cubano</p>
-            </div>
+
+        <!-- Pan de Jamon Navideño -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_navideño.jpg"
+            alt="Pan de Jamon Navideño"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan de Jamon Navideño
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Traditional Venezuelan holiday bread filled with savory ham, sweet
+              raisins, and briny green olives, creating a perfect balance of
+              flavors.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=41"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
           </div>
         </div>
-        <div class="menu-card">
-          <h3>Juices</h3>
-          <!-- list of juices with pics-->
-          <div class="juice-list">
-            <div class="juice-item">
-              <img
-                src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/orange-juice-1296x728-feature.jpg?w=1155&h=1528"
-                alt="Jugo de naranja"
-              />
-              <p>Jugo de naranja</p>
-            </div>
-            <div class="juice-item">
-              <img
-                src="https://www.attainable-sustainable.net/wp-content/uploads/2020/07/passion-fruit-juice.jpg"
-                alt="Jugo de chinola"
-              />
-              <p>Jugo de chinola</p>
-            </div>
-            <div class="juice-item">
-              <img
-                src="https://media.istockphoto.com/id/1461237880/photo/water-from-tamarindo-mexico.jpg?s=612x612&w=0&k=20&c=R5W2W2CLmBqmCEE-_FlxPKJg32xs1bIfgh3Aqt_rjXs="
-                alt="Jugo de tamarindo"
-              />
-              <p>Jugo de tamarindo</p>
-            </div>
-            <div class="juice-item">
-              <img
-                src="https://www.cookstyle.co.uk/wp-content/uploads/2017/11/Morir-Sonando-drink-two-glasses-decorated-with-pieces-of-oranges-a-cut-orange-and-a-flower.jpg"
-                alt="Morirsoñando"
-              />
-              <p>Morirsoñando</p>
-            </div>
-            <div class="juice-item">
-              <img
-                src="https://kalejunkie.com/wp-content/uploads/2023/05/KJ-Brazilian-Limonada-5.jpg"
-                alt="Avena con limón"
-              />
-              <p>Avena con limón</p>
-            </div>
+
+        <!-- Pan de Jamon y Queso -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_jamon.jpg"
+            alt="Pan de Jamon y Queso"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan de Jamon y Queso
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Golden crispy bread envelops savory ham and a rich cheese filling,
+              creating a delightful balance of textures and flavors in each
+              bite.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=42"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
           </div>
         </div>
-        <div class="menu-card">
-          <h3>Coffee</h3>
-            <!-- list of coffees with pics-->
-            <div class="coffee-list">
-                <div class="coffee-item">
-                    <img
-                    src="https://www.foodandwine.com/thmb/9JyfZPcxlV9ubEeuSznhO-M4q0w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Americano-FT-BLOG0523-b8e18cc340574cc9bed536cceeec7082.jpg" alt="Americano"
-                    />
-                    <p>Americano</p>
-                </div>
-                <div class="coffee-item">
-                    <img
-                    src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Espresso"
-                    />
-                    <p>Espresso</p>
-                </div>
-                <div class="coffee-item">
-                    <img
-                    src="https://www.allrecipes.com/thmb/chsZz0jqIHWYz39ViZR-9k_BkkE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb.jpg" alt="Capuchino"
-                    />
-                    <p>Capuchino</p>
-                </div>
-                <div class="coffee-item">
-                    <img
-                    src="https://dairyfarmersofcanada.ca/sites/default/files/styles/recipe_image/public/image_file_browser/conso_recipe/2021/Cafe%20Latte.jpg.jpeg?itok=fod4AqvL" alt="Latte"
-                    />
-                    <p>Latte</p>
-                </div>
+
+        <!-- Pan de Mantequilla -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_mantequilla.jpg"
+            alt="Pan de Mantequilla"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan de Mantequilla
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Delight in a loaf of buttery bread with a soft texture and a rich,
+              mouth-watering flavor.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=39"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan de Queso -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_queso.jpg"
+            alt="Pan de Queso"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan de Queso
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Golden, fluffy bread infused with rich, melted cheese for a savory
+              delight.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=45"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan de Relleno de Jamon -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_relleno.jpg"
+            alt="Pan de Relleno de Jamon"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan de Relleno de Jamon
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Savory ham and melted cheese are enveloped in a freshly baked,
+              golden-brown bread, offering a delightful blend of textures and
+              flavors in every bite.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=40"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan Frances Corto -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_corto.jpg"
+            alt="Pan Frances Corto"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan Frances Corto
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A short loaf of French bread with a crisp golden crust and a soft,
+              airy interior, perfect for any meal or snack.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=50"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan Frances Largo -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_frances.jpg"
+            alt="Pan Frances Largo"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan Frances Largo
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A classic long French bread with a golden crust and a soft, airy
+              interior, perfect for sandwiches or as an accompaniment to meals.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=47"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan Holandes -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_holandes.jpg"
+            alt="Pan Holandes"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan Holandes
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Traditional Dutch bread, known for its slightly sweet flavor and
+              soft, fluffy texture, perfect for any meal or as a standalone
+              snack.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=44"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan Manito -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_manito.jpg"
+            alt="Pan Holandes"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Pan Manito</h3>
+            <p class="text-gray-600 mb-4">
+              Pan Manito is a traditional Venezuelan bread, known for its soft
+              and fluffy texture with a slightly sweet flavor, perfect for
+              pairing with coffee or enjoying on its own.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=46"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan Piñita -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_pinita.jpg"
+            alt="Pan Piñita"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Pan Piñita</h3>
+            <p class="text-gray-600 mb-4">
+              Delicately baked bread featuring a sweet, buttery flavor and a
+              soft, pillowy texture that melts in your mouth.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=49"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Pan Salchicha -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/bread/pan_salchicha.jpg"
+            alt="Pan Salchicha"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan Salchicha
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Grilled sausage, nestled in a freshly baked bread roll, offering a
+              classic, savory delight with every bite.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=43"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="location" class="section location">
-      <div class="location-container">
-        <div class="location-card-row">
-          <div class="location-card">
-            <h3>Visit Us</h3>
-            <a
+    <section id="hot-desserts" class="py-12 bg-gray-100">
+      <h2 class="text-center text-3xl font-bold text-darkblue mb-6">
+        Hot Desserts
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/cupcakes.jpg"
+            alt="Cupcakes"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Cupcakes (Variety)
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Assorted flavors such as chocolate, vanilla, and lemon with creamy
+              buttercream and fillings like lemon curd and chocolate ganache.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=3" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/hojaldre_de_maizena.jpg"
+            alt="Hojaldre de Maizena"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Hojaldre de Maizena
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Delicate, flaky pastry made with cornstarch and a subtly sweet
+              flavor.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=4" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/pineapple_cake.jpg"
+            alt="Pineapple Cake"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pineapple Cake
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Upside-down cake with caramelized pineapple and cherry toppings.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=5" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/strudel_de_manzana.jpg"
+            alt="Strudel de Manzana"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Strudel de Manzana
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Apple-filled strudel with a flaky crust and cinnamon sugar.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=6" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/brownie.jpg"
+            alt="Brownie"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Brownie</h3>
+            <p class="text-gray-600 mb-4">Rich, fudgy chocolate dessert.</p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=7" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/palmeritas.jpg"
+            alt="Palmeritas"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Palmeritas</h3>
+            <p class="text-gray-600 mb-4">
+              Flaky puff pastry coated with caramelized sugar.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=8" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/apple_pie.jpg"
+            alt="Apple Pie"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Apple Pie</h3>
+            <p class="text-gray-600 mb-4">Spiced apples in a golden crust.</p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a href="https://latin-bakery.square.site/?item=9" target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/pan_de_maiz.png"
+            alt="Marmocake"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Pan de Maiz
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Our Pan de Maiz is a sweet and crumbly cornbread, made with golden
+              cornmeal and a touch of honey for added sweetness.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=10"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/marmocake.jpg"
+            alt="Marmocake"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Marmocake</h3>
+            <p class="text-gray-600 mb-4">
+              Marbled chocolate and marzipan cake.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=11"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/donuts.jpg"
+            alt="Donuts"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Donuts</h3>
+            <p class="text-gray-600 mb-4">
+              Fluffy texture with sweet glaze in various flavors like vanilla,
+              chocolate, and raspberry.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=12"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/almendra.jpg"
+            alt="Galletas de Almendras"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Galletas de Almendras
+            </h3>
+            <p class="text-gray-600 mb-4">
+              These almond cookies are perfectly crispy and delicately sweet,
+              crafted with finely ground almonds and a hint of vanilla.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=13"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/hot_desserts/espanolas.jpg"
+            alt="Galletas Españolas"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Galletas Españolas
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Spanish cookies infused with warm cinnamon, finely ground almonds,
+              and a hint of refreshing orange zest.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=14"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cold-desserts" class="py-12 bg-gray-100">
+      <h2 class="text-center text-3xl font-bold text-darkblue mb-6">
+        Cold Desserts
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/matallegos.jpg"
+            alt="Matallegos"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Matallegos</h3>
+            <p class="text-gray-600 mb-4">
+              Rich and smooth chocolate layers blended with a creamy texture,
+              delivering a decadent treat.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=15"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/majarete.jpg"
+            alt="Majarete"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Majarete</h3>
+            <p class="text-gray-600 mb-4">
+              Creamy dessert made from coconut milk and ground corn, delicately
+              spiced with cinnamon for a warm, comforting flavor.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=16"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/flan.jpg"
+            alt="Flan"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Flan</h3>
+            <p class="text-gray-600 mb-4">
+              Rich, caramelized topping with a smooth, creamy texture, infused
+              with the delicate essence of vanilla.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=17"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/cheesecake.jpg"
+            alt="Cheesecake"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Cheesecake</h3>
+            <p class="text-gray-600 mb-4">
+              Velvety cheesecake topped with fresh strawberries and a buttery
+              graham cracker crust.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=18"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/bizcocho_de_frutas.jpg"
+            alt="Bizcocho de Frutas"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Bizcocho de Frutas
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Soft sponge cake topped with fresh fruits and finished with a
+              sweet glaze.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=19"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/bread_pudding.jpg"
+            alt="Bread Pudding"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Bread Pudding
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Warm bread pudding with cinnamon and raisins, drizzled with a
+              creamy vanilla sauce.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=20"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/vanilla_souffle.jpg"
+            alt="Vanilla Soufflé"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Vanilla Soufflé
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Light and airy vanilla soufflé with a sweet, delicate flavor.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=21"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/chocolate_souffle.jpg"
+            alt="Chocolate Soufflé"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Chocolate Soufflé
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Decadent chocolate soufflé with a rich, velvety base and fluffy
+              texture.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=22"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/brazo_gitano.jpg"
+            alt="Brazo Gitano"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Brazo Gitano
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Fluffy sponge cake rolled with fruit filling and topped with
+              whipped cream.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=23"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/tres_leches.jpg"
+            alt="Tres Leches"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Tres Leches
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Sponge cake soaked in a blend of three milks and topped with
+              whipped cream.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=24"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/caracoles.jpg"
+            alt="Caracoles"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Caracoles</h3>
+            <p class="text-gray-600 mb-4">
+              Delicate pastries with a golden, crusty exterior and a luscious
+              creamy filling, lightly dusted with powdered sugar for a sweet
+              finish.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=25"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/lemon_pie.jpg"
+            alt="Lemon Pie"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Lemon Pie</h3>
+            <p class="text-gray-600 mb-4">
+              Our Lemon Pie features a buttery, flaky crust filled with a
+              vibrant, tangy lemon filling. Each slice offers a refreshing
+              citrus zing balanced beautifully with the delicate pastry.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=26"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/sarita.jpg"
+            alt="Sarita"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Sarita</h3>
+            <p class="text-gray-600 mb-4">
+              A delicate cake layered with rich, creamy icing and crowned with a
+              sweet, fruity jam top.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=27"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/chocolate.jpg"
+            alt="Chocolate Cake"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Chocolate Cake
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Spanish cookies infused with warm cinnamon, finely ground almonds,
+              and a hint of refreshing orange zest.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=28"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/cold_desserts/orange_chiffon.jpg"
+            alt="Orange Chiffon"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Orange Chiffon
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A light and fluffy chiffon cake infused with fresh orange zest and
+              juice, offering a delicate citrus flavor and airy texture.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=29"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="light-foods" class="py-12 bg-gray-100">
+      <h2 class="text-center text-3xl font-bold text-darkblue mb-6">
+        Light Foods
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/arepas.jpg"
+            alt="Arepas"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Arepas (Variety)
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Traditional arepas made from finely ground cornmeal with a variety
+              of savory fillings in a golden, crispy exterior.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=30"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/cachito.jpg"
+            alt="Cachito de Jamon"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Cachito de Jamon
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Sliced ham and melted cheese wrapped in a golden, flaky pastry.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=33"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/croquetas.jpg"
+            alt="Croquetas de Pollo"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Croquetas de Pollo
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Golden-brown croquettes filled with shredded chicken and béchamel
+              sauce.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=36"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/empanadas_dr.jpg"
+            alt="Empanadas Dominicanas"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Empanadas Dominicanas
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Flaky crust filled with seasoned ground meat, onions, bell
+              peppers, and Dominican spices.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=34"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/empanadas_ven.jpg"
+            alt="Empanadas Venezolana"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Empanadas Venezolana
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Baked cornmeal crust filled with spiced beef, seasoned chicken,
+              and vibrant vegetables.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=35"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/quipe.jpg"
+            alt="Quipe Dominicano"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Quipe Dominicano
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Seasoned ground beef blended with bulgur wheat and Caribbean
+              spices.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=37"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/cubano.jpg"
+            alt="Sandwich Cubano"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Sandwich Cubano
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Layers of slow-roasted pork, tender ham, and pickles in crispy
+              Cuban bread.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=32"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/light_foods/tequenos.jpg"
+            alt="Tequeños"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Tequeños</h3>
+            <p class="text-gray-600 mb-4">
+              Creamy cheese filling wrapped in a golden, crispy exterior.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=31"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="juices" class="py-12 bg-gray-100">
+      <h2 class="text-center text-3xl font-bold text-darkblue mb-6">Juices</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/juices/jugo_avena_limon.jpg"
+            alt="Jugo Avena con Limón"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Jugo Avena con Limón
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Creamy oat juice blended with zesty lemon for a refreshing and
+              nutritious drink.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=58"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/juices/jugo_maracuya.jpg"
+            alt="Jugo de Maracuyá"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Jugo de Maracuyá
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A refreshing blend of fresh passion fruit, offering a tangy and
+              tropical flavor in every sip.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=57"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/juices/jugo_tamarindo.jpg"
+            alt="Jugo de Tamarindo"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Jugo de Tamarindo
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A tangy blend of tamarind pulp mixed with a hint of citrus,
+              delivering a refreshing and zesty beverage perfect for any time of
+              day.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=51"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/juices/jugo_morisonando.jpg"
+            alt="Jugo Morisoñando"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Jugo Morisoñando
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A delightful blend of fresh orange juice, creamy milk, and a touch
+              of sugar, creating a refreshing and fruity beverage with a smooth,
+              creamy texture.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=53"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/juices/smoothie_fresa_banana.jpg"
+            alt="Smoothie de Fresa con Banana"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Smoothie de Fresa con Banana
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A refreshing blend of ripe strawberries and bananas, combined with
+              creamy yogurt for a smoothie that is both sweet and tangy.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=55"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coffee" class="py-12 bg-gray-100">
+      <h2 class="text-center text-3xl font-bold text-darkblue mb-6">Coffee</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/coffee/espresso.jpg"
+            alt="Café Espresso"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Café Espresso
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Features a rich, full-bodied flavor and a bold aroma, delivering a
+              creamy texture that delights with every sip.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=59"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/coffee/latte.jpg"
+            alt="Caffè Latte"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">
+              Caffè Latte
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Rich, bold espresso combined with smooth, steamed milk to create a
+              creamy and balanced latte.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=56"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/coffee/cappuccino.jpg"
+            alt="Cappuccino"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Cappuccino</h3>
+            <p class="text-gray-600 mb-4">
+              Rich espresso combined with creamy steamed milk, and topped with a
+              delicate layer of velvety foam.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=52"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="assets/coffee/mocaccino.jpg"
+            alt="Mocaccino"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-darkblue mb-2">Mocaccino</h3>
+            <p class="text-gray-600 mb-4">
+              Rich espresso blended with velvety steamed milk, enhanced with a
+              touch of decadent chocolate, topped with a light dusting of cocoa
+              powder.
+            </p>
+            <button
+              class="bg-darkyellow text-darkblue font-bold px-4 py-2 rounded-lg hover:bg-yellow-600"
+            >
+              <a
+                href="https://latin-bakery.square.site/?item=54"
+                target="_blank"
+                >Order Now</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="location"
+      class="bg-gray-200 text-darkblue flex flex-wrap justify-center"
+    >
+      <div>
+        <div class="text-center py-4 flex flex-col items-center justify-center">
+          <h3 class="font-bold my-4">Visit Us</h3>
+          <a
             id="visit-link"
             href="https://www.google.com/maps/place/113+Blossom+Centre+Blvd,+Willard,+OH+44890"
             target="_blank"
-            > 113 Blossom Centre Blvd, Willard, OH
-            <img
-                class="maps-icon"
-                src="https://img.icons8.com/ios/50/000000/google-maps-new.png"
-                alt="Google Maps"
-            />
-            </a>
-            <div class="hours">
-              <p>Monday - Saturday</p>
-              <p>7:00 AM - 7:00 PM</p>
-              <p> Sundays</p>
-              <p>8:00 AM - 12:00 PM</p>
-            </div>
-          </div>
-          <div class="location-card">
-            <h3>Contact Us</h3>
-            <!-- clickable phone -->
-            <a href="tel:567-227-9007" target="_blank">Phone: 567-227-9007</a>
-            <!-- clickable email -->
-            <a href="mailto:support@latinbakery.site" target="_blank">Email Us</a>
-            <p>Follow Us</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/latin.bakery.OH" target="_blank"
-                ><img
-                  src="https://img.icons8.com/ios/50/000000/facebook-new.png"
-                  alt="Facebook"
-              /></a>
-              <a href="https://www.instagram.com/latin.bakery.oh/" target="_blank"
-                ><img
-                  src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"
-                  alt="Instagram"
-              /></a>
-            </div>
+            class="bg-darkyellow w-72 h-36 py-4 px-2 my-2 rounded-lg border-2 border-darkyellow flex flex-col items-center justify-center"
+          >
+            <p class="text-center">113 BLOSSOM CENTRE BLVD, WILLARD, OH</p>
+            <svg
+              width="44px"
+              height="44px"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <defs>
+                  <style>
+                    .a {
+                      fill: none;
+                      stroke: #011e60;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="a"
+                  d="M23.5225,5.5H7.5a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2V7.5a2,2,0,0,0-2-2H35.5519"
+                ></path>
+                <path
+                  class="a"
+                  d="M29.5377,3.3671a9.5544,9.5544,0,0,0-9.5542,9.5544c0,7.4771,7.3137,16.49,9.2073,18.6986a.5772.5772,0,0,0,.8815-.0044c1.8615-2.2158,9.02-11.222,9.02-18.6942A9.5543,9.5543,0,0,0,29.5377,3.3671Zm0,13.1251a3.5708,3.5708,0,1,1,3.5708-3.5707A3.5708,3.5708,0,0,1,29.5377,16.4922Z"
+                ></path>
+                <line
+                  class="a"
+                  x1="34.7901"
+                  y1="25.0578"
+                  x2="42.5"
+                  y2="23.8697"
+                ></line>
+                <line
+                  class="a"
+                  x1="5.5"
+                  y1="29.5717"
+                  x2="25.3197"
+                  y2="26.5173"
+                ></line>
+                <line
+                  class="a"
+                  x1="17.908"
+                  y1="27.6595"
+                  x2="14.1682"
+                  y2="5.5"
+                ></line>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="flex flex-col items-center justify-center py-4 text-lg">
+          <h3 class="font-bold my-4">Hours</h3>
+          <p>Monday - Saturday</p>
+          <p>7:00 AM - 7:00 PM</p>
+          <p>Sundays</p>
+          <p>8:00 AM - 12:00 PM</p>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex-col items-center justify-center py-4 text-lg">
+          <h3 class="font-bold my-4">Contact Us</h3>
+          <a
+            href="tel:567-227-9007"
+            target="_blank"
+            class="bg-darkyellow w-64 py-4 my-2 rounded-lg mx-8 border-2 border-darkyellow text-lg flex items-center justify-center"
+            >PHONE: 567-227-9007</a
+          >
+          <a
+            href="mailto:support@latinbakery.site"
+            target="_blank"
+            class="bg-darkyellow w-64 py-4 my-2 rounded-lg mx-8 border-2 border-darkyellow text-lg flex items-center justify-center"
+            >EMAIL US</a
+          >
+        </div>
+        <div class="flex flex-col items-center justify-center py-4 text-lg">
+          <h3 class="font-bold my-4">Follow Us</h3>
+          <div class="flex justify-center gap-4">
+            <a
+              href="https://www.facebook.com/latin.bakery.OH"
+              target="_blank"
+              class="bg-darkyellow w-24 h-24 rounded-lg flex items-center justify-center"
+              ><img
+                src="https://img.icons8.com/ios/50/000000/facebook-new.png"
+                alt="Facebook"
+                class="w-8 h-8"
+            /></a>
+            <a
+              href="https://www.instagram.com/latin.bakery.oh/"
+              target="_blank"
+              class="bg-darkyellow w-24 h-24 rounded-lg flex items-center justify-center"
+              ><img
+                src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"
+                alt="Instagram"
+                class="w-8 h-8"
+            /></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="footer" class="section footer">
+    <section
+      id="footer"
+      class="bg-darkblue text-white text-center text-sm py-4"
+    >
       <p>&copy; 2023 Latin Bakery. All rights reserved.</p>
     </section>
 

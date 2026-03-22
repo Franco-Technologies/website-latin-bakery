@@ -96,21 +96,15 @@ export default function Locations() {
           </div>
         </div>
 
-        {/* Map Placeholder */}
-        <section className="bg-surface-container-highest rounded-3xl h-96 flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20 grayscale">
-            <img 
-              src="https://picsum.photos/seed/map-willard/1200/600" 
-              alt="Map background"
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="z-10 text-center p-8 bg-surface/80 backdrop-blur-sm rounded-2xl shadow-xl">
-            <span className="material-symbols-outlined text-5xl text-primary mb-4">map</span>
-            <h3 className="text-xl font-bold font-serif mb-2">Interactive Map Coming Soon</h3>
-            <p className="text-on-surface-variant">We're currently baking a new map experience for you.</p>
-          </div>
+        {/* Live Map */}
+        <section className="rounded-3xl h-96 overflow-hidden shadow-sm">
+          <iframe
+            title="Latin Bakery Willard location"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-82.7460%2C41.0211%2C-82.7060%2C41.0611&layer=mapnik&marker=41.041151%2C-82.725999"
+            className="w-full h-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer"
+          />
         </section>
       </div>
     </motion.div>

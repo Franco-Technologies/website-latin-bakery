@@ -1,4 +1,22 @@
 import { motion } from 'motion/react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+// Leaflet's _getIconUrl method references bundled image paths that Vite
+// rewrites during build. Deleting it forces Leaflet to use the explicit
+// iconUrl/iconRetinaUrl/shadowUrl options set via mergeOptions instead.
+delete (L.Icon.Default.prototype as unknown as Record<string, unknown>)['_getIconUrl'];
+L.Icon.Default.mergeOptions({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+});
+
+const BAKERY_POSITION: [number, number] = [41.051462, -82.721428];
 
 export default function Locations() {
   const location = {
@@ -96,21 +114,28 @@ export default function Locations() {
           </div>
         </div>
 
-        {/* Map Placeholder */}
-        <section className="bg-surface-container-highest rounded-3xl h-96 flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20 grayscale">
-            <img 
-              src="https://picsum.photos/seed/map-willard/1200/600" 
-              alt="Map background"
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
+        {/* Interactive Map */}
+        <section className="rounded-3xl overflow-hidden shadow-sm h-[28rem]">
+          <MapContainer
+            center={BAKERY_POSITION}
+            zoom={15}
+            scrollWheelZoom={true}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-          </div>
-          <div className="z-10 text-center p-8 bg-surface/80 backdrop-blur-sm rounded-2xl shadow-xl">
-            <span className="material-symbols-outlined text-5xl text-primary mb-4">map</span>
-            <h3 className="text-xl font-bold font-serif mb-2">Interactive Map Coming Soon</h3>
-            <p className="text-on-surface-variant">We're currently baking a new map experience for you.</p>
-          </div>
+            <Marker position={BAKERY_POSITION}>
+              <Popup>
+                <div className="text-sm space-y-1">
+                  <p className="font-bold">Latin Bakery Willard</p>
+                  <p>113 Blossom Centre Blvd</p>
+                  <p>Willard, OH 44890</p>
+                </div>
+              </Popup>
+            </Marker>
+          </MapContainer>
         </section>
       </div>
     </motion.div>
